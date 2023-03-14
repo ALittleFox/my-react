@@ -4,14 +4,14 @@
         "es2021": true,
         "node": true
     },
-    "0.":"配置",
+    //"0.":"配置",
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "prettier",
         "plugin:prettier/recommended"
     ],
-    "1.": "ts 解析器",
+    //"1.": "ts 解析器",
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -21,7 +21,7 @@
         "@typescript-eslint",
         "prettier"
     ],
-    "3.": "规则合集",
+    //"3.": "规则合集",
     "rules": {
         "prettier/prettier": "error",
         "no-case-declarations": "off",
