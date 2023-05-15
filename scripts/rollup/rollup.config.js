@@ -17,6 +17,8 @@ export default [
     },
     plugins: [
       ...getBaseRollupPlugins(),
+
+      // 生成 package.json
       generatePackageJson({
         inputFolder: pkgPath,
         outputFolder: pkgDistPath,
