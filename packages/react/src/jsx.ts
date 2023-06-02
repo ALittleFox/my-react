@@ -1,6 +1,13 @@
 // reactElement
 import { REACT_ELEMENT_TYPE } from 'shared/ReactSymbols'
-import { Type, Key, Ref, Props, ElementType,ReactElementType } from 'shared/ReactTypes'
+import {
+  Type,
+  Key,
+  Ref,
+  Props,
+  ElementType,
+  ReactElementType
+} from 'shared/ReactTypes'
 
 // reactelement 的装配函数
 const ReactElement = function (
@@ -10,7 +17,7 @@ const ReactElement = function (
   props: Props
 ): ReactElementType {
   const element = {
-    // 
+    //
     $$typeof: REACT_ELEMENT_TYPE,
     type,
     key,
@@ -26,7 +33,7 @@ const ReactElement = function (
  * @desc 实现jsx函数
  * @param type 组件的type
  * @param config 组件的config 需要注意 key ref 这两个 props
- * @param maybeChildren 
+ * @param maybeChildren
  */
 export const jsx = (
   type: ElementType,
@@ -78,9 +85,9 @@ export const jsx = (
   return ReactElement(type, key, ref, props)
 }
 
-export const jsxDEV =  (
+export const jsxDEV = (
   type: ElementType,
-  config: any,
+  config: any
   // ...maybeChildren: any
 ): ReactElementType => {
   // 没有传key 默认null
